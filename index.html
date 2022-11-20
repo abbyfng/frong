@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel ="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+  <link rel ="stylesheet" href="{{ url_for('static', filename='js/script.js') }}">
+</head>
+
+<body>
+  <h1> hi ur face</h1>
+
+<label for="yourFeelings"> Enter a short phrase: </label>
+  <p></p>
+<form method="GET" action="/rate">
+    <input name="text">
+    <input type="submit">
+</form>
+  
+<div class="button">
+  <button method = "PUT" id="btn"> Click me for your song! </button>
+  <p></p>
+  <embed id="music" src="" allowfullscreen="true" width=90% height=400>
+</embed>
+</div>
+</body>
+
+</html>
